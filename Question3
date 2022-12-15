@@ -1,0 +1,17 @@
+# Question 3
+a = 10
+b = 20
+c = a + b
+print("\nQuestion 3.\na).", a, "+", b, " = ", c)
+
+d = b - a
+print("b).", b, "-", a, " = ", d)
+
+e = b / a
+print("c).", b, "/", a, " = ", e)
+
+f = b // a
+print("d).", b, "//", a, " = ", f)
+
+g = b * a
+print("e).", b, "*", a, " = ", g)
