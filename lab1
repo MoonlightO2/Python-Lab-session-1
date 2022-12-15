@@ -95,22 +95,20 @@ print("k).", s.find("Data"))
 # Question 8
 print("\nQuestion 8. Print a list of ASCII codes in a string")
 
-print('Enter your name to find ascii value:')
-name = input()
+
+def asciicodes(name):
+    for char in name:
+        print(char, ":", ord(char))
 
 
-#def codes(name):
-for char in name:
-    print(char, ":", ord(char))
+x = input('Enter your name to find ascii value: ')
+print(asciicodes(x))
 
-print('Enter your name to find ascii value:')
-name = input()
+x = input('Enter your name to find ascii value: ')
+print(asciicodes(x))
 
-
-#def codes(name):
-for char in name:
-    print(char, ":", ord(char))
-
+x = input('Enter your name to find ascii value: ')
+print(asciicodes(x))
 
 # Question 9
 print("\nQuestion 9. Replace all but first and last letter of string with underscore")
