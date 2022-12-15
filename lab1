@@ -101,7 +101,7 @@ name = input()
 
 #def codes(name):
 for char in name:
-    print(ord(char))
+    print(char, ":", ord(char))
 
 print('Enter your name to find ascii value:')
 name = input()
@@ -109,7 +109,7 @@ name = input()
 
 #def codes(name):
 for char in name:
-    print(ord(char))
+    print(char, ":", ord(char))
 
 
 # Question 9
