@@ -1,0 +1,21 @@
+# Question 5
+# Using single quotes.
+s1 = 'The "Dundee Express" is due at 2 o\'clock.\nI hope it is on time.'
+print("\nQuestion 5.\na). i.", s1)
+
+s2 = 'The "Dundee Express" is due at 2 o\'clock.\nI hope it is on time.'
+print("a). ii.", s2)
+
+# Using double quotes.
+s3 = "The \"Dundee Express\" is due at 2 o'clock.\nI hope it is on time."
+print("\nb). i.", s3)
+
+s4 = 'The "Dundee Express" is due at 2 o\'clock.\nI hope it is on time.'
+print("b). ii.", s4)
+
+# Using triple quotes.
+s5 = """The "Dundee Express" is due at 2 o'clock. I hope it is on time."""
+print("\nc). i.", s5)
+
+s6 = 'The "Dundee Express" is due at 2 o\'clock.\nI hope it is on time.'
+print("c). ii.", s6)
