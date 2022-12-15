@@ -1,0 +1,17 @@
+# Question 8
+print("\nQuestion 8. Print a list of ASCII codes in a string")
+
+
+def asciicodes(name):
+    for char in name:
+        print(char, ":", ord(char))
+
+
+x = input('Enter your name to find ascii value: ')
+print(asciicodes(x))
+
+x = input('Enter your name to find ascii value: ')
+print(asciicodes(x))
+
+x = input('Enter your name to find ascii value: ')
+print(asciicodes(x))
