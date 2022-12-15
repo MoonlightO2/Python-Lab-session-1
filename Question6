@@ -1,0 +1,18 @@
+# Question 6
+s = "Data Engineering"
+print("\nQuestion 6.\na).", s[0])
+print("b).", s[7])
+print("c).", s[-3])
+print("d).", len(s))
+print("e).", s[15])
+print("f).", s[5:8])
+print("g).", s[-3:-6])
+print("h).", s[-6:-3])
+print("i).", s[:-3])
+print("j).", s[5:])
+print("k).", s[5:500])
+print("l).", s[:])
+print("m).", s[1:8:2])
+print("n).", s[::2])
+print("o).", s[::-1])
+ 
