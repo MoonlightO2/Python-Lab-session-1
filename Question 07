@@ -1,6 +1,7 @@
 # Question 7
-s = "     Masters in Data Science and Engineering   "
 print("\nQuestion 7. String functions)
+
+s = "     Masters in Data Science and Engineering   "
 print("a).", s.capitalize())
 print("b).", s.lower())
 print("c).", s.upper())
