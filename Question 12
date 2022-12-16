@@ -1,0 +1,8 @@
+# Question 12
+print("\nQuestion 12. Return string with hyphens separating characters")
+
+def dashify(newstr):
+    """Return string with hyphens separating characters."""
+    return '-'.join(list(newstr))
+
+print(dashify(input('Enter your name to dashify: ')))
