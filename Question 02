@@ -3,7 +3,7 @@ print("\nQuestion 2. Main arithmetic operators")
 
 # Question 2
 x = 2 ** 43
-print("Question 2. \na). 2 ^ 43 = ", x)
+print("a). 2 ^ 43 = ", x)
 
 y = x % 537
 print("b).", x, "%", 537, " = ", y)
