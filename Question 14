@@ -1,0 +1,52 @@
+# Question 14
+print("\nQuestion 14. Print string with only guessed letters shown")
+
+def guessstring(newstr):
+    """Print string with only guessed letters shown.
+
+    Argument is a string. Repeatly prompts for a letter to be
+    entered, and prints string with only the letters guessed
+    so far shown, the others replaced by underscores. Stops
+    when all the letters have been guessed.
+    """
+    guessstr = '_'*len(newstr)
+    listguess = list(guessstr)
+    print(guessstr)
+    while (newstr != guessstr):
+        guess = input('Guess a letter: ')
+        letter = guess[0]  # ignore any extra input after first letter
+        for i in range(len(newstr)):
+            if (newstr[i] == letter):
+                listguess[i] = letter
+        guessstr = ''.join(listguess)
+        print(guessstr)
+
+# Version which ignores the case of letters:
+
+
+guessstring("Shashini")
+
+def guessstring2(newstr):
+    """Print string with only guessed letters shown.
+
+    Argument is a string. Repeatly prompts for a letter to be
+    entered, and prints string with only the letters guessed
+    so far shown, the others replaced by underscores. Stops
+    when all the letters have been guessed. Letters can be
+    entered in either case.
+    """
+    guessstr = '_'*len(newstr)
+    lowerstr = newstr.lower()
+    listguess = list(guessstr)
+    print(guessstr)
+    while (newstr != guessstr):
+        guess = input('Guess a letter: ')
+        letter = guess[0].lower()
+        for i in range(len(newstr)):
+            if (lowerstr[i] == letter):
+                listguess[i] = newstr[i]
+        guessstr = ''.join(listguess)
+        print(guessstr)
+
+
+guessstring2("Shashini")
