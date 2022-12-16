@@ -1,0 +1,5 @@
+# Question 4
+x = "Shashini"
+y = "Peiris"
+print("\nQuestion 4. Concatenation and repetition operators\na).", x + " " + y)
+print("b).", x * 4 + " " + y * 3)
