@@ -1,18 +1,3 @@
-# Question 7
-s = "     Masters in Data Science and Engineering   "
-print("\nQuestion 7. s = ", s.lstrip())
-print("a).", s.capitalize())
-print("b).", s.lower())
-print("c).", s.upper())
-print("d).", s.isalnum())
-print("e).", s.isalpha())
-print("f).", s.isdigit())
-print("g).", s.strip())
-print("h).", s.lstrip())
-print("i).", s.rstrip())
-print("j).", s.format())
-print("k).", s.find("Data"))
-
 # Question 8
 print("\nQuestion 8. Print a list of ASCII codes in a string")
 
