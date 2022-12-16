@@ -1,3 +1,18 @@
+# Question 7
+s = "     Masters in Data Science and Engineering   "
+print("\nQuestion 7. s = ", s.lstrip())
+print("a).", s.capitalize())
+print("b).", s.lower())
+print("c).", s.upper())
+print("d).", s.isalnum())
+print("e).", s.isalpha())
+print("f).", s.isdigit())
+print("g).", s.strip())
+print("h).", s.lstrip())
+print("i).", s.rstrip())
+print("j).", s.format())
+print("k).", s.find("Data"))
+
 # Question 8
 print("\nQuestion 8. Print a list of ASCII codes in a string")
 
@@ -6,12 +21,19 @@ def asciicodes(name):
     for char in name:
         print(char, ":", ord(char))
 
-
-x = input('Enter your name to find ascii value: ')
-print(asciicodes(x))
-
-x = input('Enter your name to find ascii value: ')
-print(asciicodes(x))
-
-x = input('Enter your name to find ascii value: ')
-print(asciicodes(x))
+print("ASCII value of the word 'Sri Lanka'")
+asciicodes("Sri Lanka")
+print("\nFind ASCII value of your name")
+"""
+while True:
+    m = input('Ready? (Y / N): ').lower()
+    if m == 'y':
+        myname = input("Enter your name to find it's ASCII value: ")
+        asciicodes(myname)
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+"""
