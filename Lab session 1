@@ -100,24 +100,31 @@ def asciicodes(name):
     for char in name:
         print(char, ":", ord(char))
 
+print("ASCII value of the word 'Sri Lanka'")
+asciicodes("Sri Lanka")
+print("\nFind ASCII value of your name")
+"""
+while True:
+    m = input('ASCII value of your name.. Ready? (Y / N): ').lower()
+    if m == 'y':
+        myname = input("Enter your name to find it's ASCII value: ")
+        asciicodes(myname)
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+"""
 
-x = input('Enter your name to find ascii value: ')
-print(asciicodes(x))
-
-x = input('Enter your name to find ascii value: ')
-print(asciicodes(x))
-
-x = input('Enter your name to find ascii value: ')
-print(asciicodes(x))
 
 # Question 9
 print("\nQuestion 9. Replace all but first and last letter of string with underscore")
-def firstlast():
-    """Replace all but first and last letter of string with underscore.
+print("firstlast() function and firstlastk(k=1) function is executed in this Question")
 
-    Repeatly prompt for string and print required string
-    """
-    newstr = input('Enter first string: ')
+def firstlast():
+    """Replace all but first and last letter of string with underscore. Repeatly prompt for string and print required string"""
+    newstr = input('Enter string 1: ')
     while (newstr != ''):
         lenstr = len(newstr)
         if (lenstr <= 2):
@@ -125,7 +132,21 @@ def firstlast():
         else:
             dashstr = newstr[0] + '_' * (lenstr-2) + newstr[-1]
             print(dashstr)
-        newstr = input('Enter next string: ')
+        newstr = input('Enter string 2: ')
+        break
+
+'''
+while True:
+    m = input('*firstlast* Ready? (Y / N): ').lower()
+    if m == 'y':
+        firstlast()
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+'''
 
 # Note: In Python 3.8 (released in October 2019), you can use
 # assignment expressions (written with :=) to write this a bit more
@@ -157,7 +178,7 @@ def firstlastk(k=1):
 
     Repeatly prompt for string and print required string
     """
-    newstr = input('Enter first string: ')
+    newstr = input('Enter string 1: ')
     while (newstr != ''):
         lenstr = len(newstr)
         if (lenstr <= 2*k):
@@ -165,10 +186,25 @@ def firstlastk(k=1):
         else:
             dashstr = newstr[:k] + '_' * (lenstr-2*k) + newstr[-k:]
             print(dashstr)
-        newstr = input('Enter next string: ')
+        newstr = input('Enter string 2: ')
+        break
+
+'''
+while True:
+    m = input('*firstlastk* Ready? (Y / N): ').lower()
+    if m == 'y':
+        firstlastk(k=1)
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+'''
 
 # Question 10
 print("\nQuestion 10. Print all n-element subsequences of a string")
+print("subseq2() function and subseq3() function is executed in this Question")
 
 def subseq2(newstr):
     """Print all 2-element subsequences of a string."""
@@ -177,6 +213,18 @@ def subseq2(newstr):
             print(newstr[i] + newstr[j], end=' ')
     print()
 
+'''
+while True:
+    m = input('*subseq2* Ready? (Y / N): ').lower()
+    if m == 'y':
+        subseq2(input('Enter your name: '))
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+'''
 
 def subseq3(newstr):
     """Print all 3-element subsequences of a string."""
@@ -185,6 +233,19 @@ def subseq3(newstr):
             for k in range(j + 1, len(newstr)):
                 print(newstr[i] + newstr[j] + newstr[k], end=' ')
     print()
+
+'''
+while True:
+    m = input('*subseq3* Ready? (Y / N): ').lower()
+    if m == 'y':
+        subseq3(input('Enter your name: '))
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+'''
 
 # Question 11
 print("\nQuestion 11. Modify the files containing the functions")
@@ -197,7 +258,20 @@ def subseq2alt(newstr):
     for i, first in enumerate(newstr):
         for second in newstr[i + 1:]:
             print(first + second, end=' ')
+    print()
 
+'''
+while True:
+    m = input('*subseq2alt* Ready? (Y / N): ').lower()
+    if m == 'y':
+        subseq2alt(input('Enter your name: '))
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+'''
 
 def subseq3alt(newstr):
     """Print all 2-element subsequences of a string."""
@@ -207,6 +281,18 @@ def subseq3alt(newstr):
                 print(first + second + third, end=' ')
     print()
 
+'''
+while True:
+    m = input('*subseq3alt* Ready? (Y / N): ').lower()
+    if m == 'y':
+        subseq3alt(input('Enter your name: '))
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+'''
 
 # To produce all n-element subsequence, for parameter n, use
 # recursion. The idea is as follows:
@@ -235,6 +321,21 @@ def subseqn(s, n, pre=''):
         subseqn(s[1:], n - 1, pre + s[0])
         subseqn(s[1:], n, pre)
 
+print("Did not work")
+'''
+while True:
+    m = input('*subseqn* Ready? (Y / N): ').lower()
+    if m == 'y':
+        s = input('Enter your name: ')
+        n = input('Enter your no: ')
+        subseqn(s, n, pre='')
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+#'''
 
 # An alternative version, this time not using recursion
 # The idea is to store a list of indices and then update at each step
@@ -289,17 +390,24 @@ def dashify(newstr):
     """Return string with hyphens separating characters."""
     return '-'.join(list(newstr))
 
+print(dashify(input('Enter your name to dashify: ')))
+
 # Question 13
 print("\nQuestion 13. Calculate average length of a list of words entered")
 
 def avlen():
     """Calculate average length of a list of words entered."""
     instr = input('Enter some words: ')
+    print("Length of words: ", len(instr))
     words = instr.split()
     total = 0
     for w in words:
         total += len(w)
     print('Average word length:', float(total)/float(len(words)))
+
+
+avlen()
+
 
 # Question 14
 print("\nQuestion 14. Print string with only guessed letters shown")
@@ -326,6 +434,9 @@ def guessstring(newstr):
 
 # Version which ignores the case of letters:
 
+
+guessstring("Shashini")
+
 def guessstring2(newstr):
     """Print string with only guessed letters shown.
 
@@ -347,3 +458,6 @@ def guessstring2(newstr):
                 listguess[i] = newstr[i]
         guessstr = ''.join(listguess)
         print(guessstr)
+
+
+guessstring2("Shashini")
