@@ -1,0 +1,70 @@
+# Question 9
+print("\nQuestion 9. Replace all but first and last letter of string with underscore")
+print("firstlast() function and firstlastk(k=1) function is executed in this Question")
+
+def firstlast():
+    """Replace all but first and last letter of string with underscore. Repeatly prompt for string and print required string"""
+    newstr = input('Enter first string: ')
+    while (newstr != ''):
+        lenstr = len(newstr)
+        if (lenstr <= 2):
+            print(newstr)
+        else:
+            dashstr = newstr[0] + '_' * (lenstr-2) + newstr[-1]
+            print(dashstr)
+        newstr = input('Enter next string: ')
+        break
+
+'''
+while True:
+    m = input('Ready? (Y / N): ').lower()
+    if m == 'y':
+        firstlast()
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+'''
+
+# Note: In Python 3.8 (released in October 2019), you can use
+# assignment expressions (written with :=) to write this a bit more
+# neatly, avoiding the need for the input statement at the end, and
+# a separate statement to store the length of the string, like
+# this:
+#
+# def firstlast():
+#     """Replace all but first and last letter of string with underscore.
+#
+#     Repeatly prompt for string and print required string
+#     """
+#     while ((newstr := input('Enter string: ')) != ''):
+#         if ((lenstr := len(newstr)) <= 2):
+#             print(newstr)
+#         else:
+#             dashstr = newstr[0] + '_' * (lenstr-2) + newstr[-1]
+#             print(dashstr)
+#
+# Note that it is advisable to put the assignment expression in
+# parentheses:
+#
+# (newstr := input('Enter string: '))
+#
+# Note that this version will not work in version 3.7.
+
+def firstlastk(k=1):
+    """Replace all but first and last k letters of string with underscore.
+
+    Repeatly prompt for string and print required string
+    """
+    newstr = input('Enter first string: ')
+    while (newstr != ''):
+        lenstr = len(newstr)
+        if (lenstr <= 2*k):
+            print(newstr)
+        else:
+            dashstr = newstr[:k] + '_' * (lenstr-2*k) + newstr[-k:]
+            print(dashstr)
+        newstr = input('Enter next string: ')
+
