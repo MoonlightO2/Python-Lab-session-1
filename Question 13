@@ -1,0 +1,15 @@
+# Question 13
+print("\nQuestion 13. Calculate average length of a list of words entered")
+
+def avlen():
+    """Calculate average length of a list of words entered."""
+    instr = input('Enter some words: ')
+    print("Length of words", len(instr))
+    words = instr.split()
+    total = 0
+    for w in words:
+        total += len(w)
+    print('Average word length:', float(total)/float(len(words)))
+
+
+avlen()
