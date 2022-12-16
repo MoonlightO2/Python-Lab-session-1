@@ -3,7 +3,7 @@ print("\nQuestion 3. Calculations and Print")
 a = 10
 b = 20
 c = a + b
-print("\nQuestion 3.\na).", a, "+", b, " = ", c)
+print("a).", a, "+", b, " = ", c)
 
 d = b - a
 print("b).", b, "-", a, " = ", d)
