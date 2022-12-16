@@ -1,0 +1,44 @@
+# Question 10
+print("\nQuestion 10. Print all n-element subsequences of a string")
+print("subseq2() function and subseq3() function is executed in this Question")
+
+def subseq2(newstr):
+    """Print all 2-element subsequences of a string."""
+    for i in range(len(newstr)):
+        for j in range(i + 1, len(newstr)):
+            print(newstr[i] + newstr[j], end=' ')
+    print()
+
+'''
+while True:
+    m = input('Ready? (Y / N): ').lower()
+    if m == 'y':
+        subseq2(input('Enter your name: '))
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+'''
+
+def subseq3(newstr):
+    """Print all 3-element subsequences of a string."""
+    for i in range(len(newstr)):
+        for j in range(i + 1, len(newstr)):
+            for k in range(j + 1, len(newstr)):
+                print(newstr[i] + newstr[j] + newstr[k], end=' ')
+    print()
+
+'''
+while True:
+    m = input('Ready? (Y / N): ').lower()
+    if m == 'y':
+        subseq3(input('Enter your name: '))
+    elif m == 'n':
+        print("Not ready! Exit")
+        break
+    else:
+        print("Wrong input! Exit")
+        break
+'''
