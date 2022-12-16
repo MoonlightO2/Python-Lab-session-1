@@ -1,6 +1,6 @@
 # Question 6
 s = "Data Engineering"
-print("\nQuestion 6.\na).", s[0])
+print("\nQuestion 6.\na). String functions", s[0])
 print("b).", s[7])
 print("c).", s[-3])
 print("d).", len(s))
